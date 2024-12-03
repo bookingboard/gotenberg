@@ -14,7 +14,7 @@ on:
   workflow_dispatch:      
 
 env: 
-  GOTENBERG_VERSION=8.14.1
+  GOTENBERG_VERSION: 8.14.1
 
 jobs:
   build-and-deploy:
