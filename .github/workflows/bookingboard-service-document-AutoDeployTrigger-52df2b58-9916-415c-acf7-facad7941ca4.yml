@@ -46,4 +46,4 @@ jobs:
       
       - name: Build and push Docker image for release
         run: |
-          make release GOTENBERG_VERSION=${{ github.event.release.tag_name }} 
+          make release GOTENBERG_VERSION=v8.14.1
