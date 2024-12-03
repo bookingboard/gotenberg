@@ -42,8 +42,6 @@ jobs:
         with:
           username: ${{ secrets.BOOKINGBOARDSERVICEDOCUMENT_REGISTRY_USERNAME }}
           password: ${{ secrets.BOOKINGBOARDSERVICEDOCUMENT_REGISTRY_PASSWORD }}
-      
       - name: Build and push Docker image for release
         run: |
-          make release GOTENBERG_VERSION=${{ github.event.release.tag_name }}
-          make release GOTENBERG_VERSION=${{ github.event.release.tag_name }} DOCKER_REGISTRY=thecodingmachine
+          make release GOTENBERG_VERSION=${{ github.event.release.tag_name }} DOCKER_REGISTRY=bookingboard.azurecr.io
