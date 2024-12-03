@@ -13,9 +13,6 @@ on:
   # Allow manual trigger 
   workflow_dispatch:      
 
-env: 
-  GOTENBERG_VERSION: 8.14.1
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
